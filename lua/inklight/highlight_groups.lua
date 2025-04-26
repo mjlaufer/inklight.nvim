@@ -1,0 +1,341 @@
+local c = require('inklight.colors')
+
+local bold = 'bold'
+local italic = 'italic'
+local underline = 'underline'
+local undercurl = 'undercurl'
+
+return {
+    ---- :h highlight-default ----------------------------------
+    ColorColumn = { bg = c.bg2 },
+    -- Cursor = {},
+    -- lCursor = {},
+    -- CursorIM = {},
+    -- CursorColumn = {},
+    CursorLine = { bg = c.bg2 },
+    Normal = { fg = c.fg1, bg = c.bg1 }, -- Normal text
+    NormalFloat = { bg = c.bg2 }, -- Normal text in floating windows
+    FloatBorder = { fg = c.bg3, bg = c.bg1 },
+    -- NormalNC = {},
+    -- TermCursor = {},
+    -- TermCursorNC = {},
+    VertSplit = { fg = c.bg3 },
+    WinBar = { bg = c.bg1, fg = c.fg1 },
+    WinBarNC = { bg = c.bg1, fg = c.fg2 },
+    WinSeparator = { fg = c.bg3 },
+    LineNr = { fg = c.fg3 },
+    CursorLineNr = { fg = c.yellow.fg1, bg = c.bg2, style = bold },
+    Folded = { fg = c.yellow.fg2, bg = c.bg2 },
+    FoldColumn = { fg = c.bg3 },
+    SignColumn = { fg = c.bg3 },
+    Pmenu = { bg = c.bg2 },
+    PmenuSel = { bg = c.bg3 },
+    PmenuSbar = { bg = c.bg2 },
+    PmenuThumb = { bg = c.bg3 },
+    StatusLine = { bg = c.bg2 },
+    StatusLineNC = { bg = c.bg2, fg = c.fg2 },
+    WildMenu = { bg = c.bg2 },
+    TabLine = { bg = c.bg2, fg = c.fg2 },
+    TabLineFill = { bg = c.bg2 },
+    TabLineSel = { bg = c.bg2 },
+    MatchParen = { fg = c.fg1, bg = c.bg3, style = bold },
+    Substitute = { bg = c.cyan.bg1 },
+    Search = { bg = c.yellow.bg1 },
+    IncSearch = { bg = c.yellow.bg1 },
+    Visual = { bg = c.blue.bg1 },
+    -- VisualNOS = {},
+    Conceal = { fg = c.fg2 },
+    Whitespace = { fg = c.bg3 },
+    EndOfBuffer = { fg = c.bg3 },
+    NonText = { fg = c.bg3 },
+    SpecialKey = { fg = c.bg3 },
+    Directory = { fg = c.magenta.fg1 },
+    Title = { fg = c.blue.fg1 },
+    ErrorMsg = { fg = c.bg1, bg = c.red.fg2 },
+    ModeMsg = { fg = c.fg2 },
+    -- MsgArea = {},
+    -- MsgSeparator = {},
+    MoreMsg = { fg = c.cyan.fg2 },
+    WarningMsg = { fg = c.yellow.fg2 },
+    Question = { fg = c.green.fg2 },
+
+    ---- :h group-name -----------------------------------------
+    Identifier = { fg = c.fg1 }, -- (preferred) any variable name
+    Comment = { fg = c.red.fg1 },
+    Function = { fg = c.blue.fg1 },
+    String = { fg = c.green.fg1 },
+    Character = { fg = c.green.fg1 },
+    Constant = { fg = c.fg1 },
+    Number = { fg = c.yellow.fg1 },
+    Float = { fg = c.yellow.fg1 },
+    Boolean = { fg = c.yellow.fg1 },
+    Operator = { fg = c.magenta.fg1 },
+    Statement = { fg = c.purple.fg1 }, -- (preferred) any statement
+    Conditional = { fg = c.purple.fg1 }, -- if, then, else, etc.
+    Repeat = { fg = c.purple.fg1 }, -- for, do, while, etc.
+    Exception = { fg = c.purple.fg1 }, -- try, catch, throw
+    Label = { fg = c.fg1 },
+    -- Keyword = {}, -- any other keyword
+    PreProc = { fg = c.magenta.fg1 }, -- (preferred) generic Preprocessor
+    -- Include = {},
+    -- Define = {},
+    -- Macro = {},
+    -- PreCondit = {},
+    Type = { fg = c.cyan.fg1 },
+    -- StorageClass = {},
+    -- Structure = {},
+    -- Typedef = {},
+    Special = { fg = c.fg2 },
+    -- SpecialChar = {};
+    Tag = { fg = c.fg2 },
+    Delimiter = { fg = c.fg2 },
+    -- Specialcomment = {};
+    -- Debug = {};
+    Underlined = { style = underline },
+    Bold = { style = bold },
+    Italic = { style = italic },
+    Ignore = { fg = c.fg2 },
+    Error = { bg = c.red.fg2 },
+    Todo = { fg = c.yellow.fg1, style = bold },
+
+    ---- :h lsp-semantic_tokens --------------------------------
+    ['@lsp.type.annotation.java'] = { fg = c.fg2 },
+    ['@lsp.type.namespace.rust'] = { fg = c.fg1 },
+    ['@lsp.type.parameter.java'] = { fg = c.fg1 },
+    ['@lsp.typemod.variable.defaultlibrary.javascript'] = { fg = c.fg2 },
+    ['@lsp.typemod.variable.defaultlibrary.typescript'] = { fg = c.fg2 },
+    ['@lsp.typemod.variable.defaultlibrary.javascriptreact'] = { fg = c.fg2 },
+    ['@lsp.typemod.variable.defaultlibrary.typescriptreact'] = { fg = c.fg2 },
+
+    ---- :h nvim-treesitter (external plugin) ------------------
+    ['@attribute'] = { fg = c.magenta.fg1 },
+    ['@comment'] = { fg = c.red.fg1 },
+    ['@constant.javascript'] = { fg = c.fg1, style = italic },
+    ['@constant.typescript'] = { fg = c.fg1, style = italic },
+    ['@constant.builtin.javascript'] = { fg = c.yellow.fg1 },
+    ['@constant.builtin.typescript'] = { fg = c.yellow.fg1 },
+    ['@constant.builtin.tsx'] = { fg = c.yellow.fg1 },
+    ['@constructor'] = { fg = c.blue.fg1 },
+    ['@constructor.lua'] = { fg = c.fg2 },
+    ['@function'] = { fg = c.blue.fg1 },
+    ['@function.macro'] = { fg = c.blue.fg1 },
+    ['@function.builtin.go'] = { fg = c.blue.fg1 },
+    ['@keyword.operator'] = { fg = c.magenta.fg1 },
+    ['@label'] = { fg = c.fg1 },
+    ['@module.elm'] = { fg = c.fg1 },
+    ['@namespace'] = { fg = c.fg1 },
+    ['@parameter'] = { fg = c.fg1 },
+    ['@punctuation.delimiter'] = { fg = c.fg2 },
+    ['@punctuation.bracket'] = { fg = c.fg2 },
+    ['@punctuation.special'] = { fg = c.fg2 },
+    ['@string.regexp'] = { fg = c.yellow.fg1 },
+    ['@string.escape'] = { fg = c.yellow.fg1 },
+    ['@type.builtin'] = { fg = c.cyan.fg1 },
+    ['@type.qualifier'] = { fg = c.purple.fg1 },
+    ['@variable'] = { fg = c.fg1 },
+    ['@variable.builtin'] = { fg = c.fg2 },
+    ['@tag'] = { fg = c.cyan.fg1 },
+    ['@tag.attribute'] = { fg = c.fg1 },
+    ['@tag.builtin'] = { fg = c.cyan.fg1 },
+    ['@tag.delimiter'] = { fg = c.fg1 },
+    ['@tag.javascript'] = { fg = c.blue.fg1 },
+    ['@tag.tsx'] = { fg = c.blue.fg1 },
+    ['@text'] = { fg = c.fg1 },
+    ['@text.title'] = { fg = c.blue.fg1 },
+    ['@text.warning'] = { fg = c.red.fg2 },
+    markdownH1 = { fg = c.blue.fg1 },
+    markdownH2 = { fg = c.purple.fg1 },
+    markdownH3 = { fg = c.magenta.fg1 },
+    markdownH4 = { fg = c.red.fg1 },
+    markdownLink = { fg = c.blue.fg1 },
+    markdownListMarker = { fg = c.yellow.fg1 },
+    markdownUrl = { fg = c.blue.fg1 },
+    zshFunction = { fg = c.blue.fg1 },
+
+    ---- :h spell ----------------------------------------------
+    SpellBad = { sp = c.red.fg2, style = undercurl },
+    SpellCap = { sp = c.red.fg2, style = undercurl },
+    SpellLocal = { sp = c.red.fg2, style = undercurl },
+    SpellRare = { sp = c.yellow.fg2, style = undercurl },
+
+    ---- :h diff ----------------------------------------------
+    DiffAdd = { bg = c.green.bg1 },
+    DiffChange = { bg = c.cyan.bg1 },
+    DiffDelete = { bg = c.red.bg1 },
+    DiffText = { bg = c.cyan.bg2 },
+
+    ---- :h diagnostic-highlight -------------------------------
+    DiagnosticError = { fg = c.red.fg2 },
+    DiagnosticWarn = { fg = c.yellow.fg2 },
+    DiagnosticHint = { fg = c.cyan.fg2 },
+    DiagnosticInfo = { fg = c.blue.fg2 },
+    DiagnosticUnnecessary = { fg = c.fg3 },
+
+    DiagnosticVirtualTextError = { fg = c.red.fg2 },
+    DiagnosticVirtualTextWarn = { fg = c.yellow.fg2 },
+    DiagnosticVirtualTextHint = { fg = c.cyan.fg2 },
+    DiagnosticVirtualTextInfo = { fg = c.blue.fg2 },
+
+    DiagnosticUnderlineError = { style = undercurl, sp = c.red.fg2 },
+    DiagnosticUnderlineWarn = { style = undercurl, sp = c.yellow.fg2 },
+    DiagnosticUnderlineHint = { style = undercurl, sp = c.cyan.fg2 },
+    DiagnosticUnderlineInfo = { style = undercurl, sp = c.blue.fg2 },
+
+    -- DiagnosticFloatingError = {},
+    -- DiagnosticFloatingWarn = {},
+    -- DiagnosticFloatingHint = {},
+    -- DiagnosticFloatingInfo = {},
+
+    -- DiagnosticSignError = {},
+    -- DiagnosticSignWarn = {},
+    -- DiagnosticSignHint = {},
+    -- DiagnosticSignInfo = {},
+
+    ---- :h lsp-highlight --------------------------------------
+    LspInlayHint = { fg = c.fg3 },
+    LspReferenceText = { bg = c.bg3 },
+    LspReferenceRead = { bg = c.bg3 },
+    LspReferenceWrite = { bg = c.bg3 },
+
+    LspDiagnosticsDefaultError = { fg = c.red.fg2 },
+    LspDiagnosticsDefaultWarning = { fg = c.yellow.fg2 },
+    LspDiagnosticsDefaultHint = { fg = c.cyan.fg2 },
+    LspDiagnosticsDefaultInformation = { fg = c.blue.fg2 },
+
+    -- LspDiagnosticsVirtualTextError = {},
+    -- LspDiagnosticsVirtualTextWarning = {},
+    -- LspDiagnosticsVirtualTextHint = {},
+    -- LspDiagnosticsVirtualTextInformation = {},
+
+    LspDiagnosticsUnderlineError = { style = undercurl },
+    LspDiagnosticsUnderlineWarning = { style = undercurl },
+    LspDiagnosticsUnderlineHint = { style = undercurl },
+    LspDiagnosticsUnderlineInformation = { style = undercurl },
+
+    -- LspDiagnosticsFloatingError = {},
+    -- LspDiagnosticsFloatingWarning = {},
+    -- LspDiagnosticsFloatingHint = {},
+    -- LspDiagnosticsFloatingInformation = {},
+
+    -- LspDiagnosticsSignError = {},
+    -- LspDiagnosticsSignWarning = {},
+    -- LspDiagnosticsSignHint = {},
+    -- LspDiagnosticsSignInformation = {},
+
+    ---- :h gitsigns (external plugin) -------------------------
+    GitSignsAdd = { fg = c.green.fg2 },
+    GitSignsChange = { fg = c.cyan.fg2 },
+    GitSignsDelete = { fg = c.red.fg2 },
+    GitSignsCurrentLineBlame = { fg = c.fg3 },
+
+    ---- neotest (external plugin) -----------------------------
+    NeotestAdapterName = { fg = c.fg1 },
+    NeotestDir = { fg = c.fg1 },
+    NeotestRunning = { fg = c.green.fg2 },
+    NeotestPassed = { fg = c.green.fg1 },
+    NeotestFailed = { fg = c.red.fg2 },
+    NeotestSkipped = { fg = c.yellow.fg2 },
+    NeotestTest = { fg = c.fg1 },
+    NeotestFile = { fg = c.fg1 },
+    NeotestNamespace = { fg = c.fg1 },
+    NeotestFocused = { fg = c.magenta.fg1 },
+    NeotestIndent = { fg = c.fg3 },
+    NeotestMarked = { fg = c.blue.fg1 },
+    NeotestWinSelect = { fg = c.blue.fg1 },
+    NeotestTarget = { fg = c.cyan.fg1 },
+    NeotestUnknown = { fg = c.fg2 },
+    NeotestExpandMarker = { fg = c.fg3 },
+
+    ---- nvim-cmp (external plugin) ----------------------------
+    CmpItemAbbrMatch = { fg = c.green.fg1 },
+    CmpItemAbbrMatchFuzzy = { fg = c.green.fg2 },
+    CmpItemKindMenu = { fg = c.green.fg1 },
+    CmpItemKindText = { fg = c.fg1 },
+    CmpItemKindKeyword = { fg = c.purple.fg1 },
+    CmpItemKindVariable = { fg = c.fg1 },
+    CmpItemKindValue = { fg = c.fg2 },
+    CmpItemKindConstant = { fg = c.yellow.fg1 },
+    CmpItemKindOperator = { fg = c.magenta.fg1 },
+    CmpItemKindFunction = { fg = c.blue.fg1 },
+    CmpItemKindMethod = { fg = c.blue.fg1 },
+    CmpItemKindReference = { fg = c.fg2 },
+    CmpItemKindClass = { fg = c.cyan.fg1 },
+    CmpItemKindInterface = { fg = c.cyan.fg1 },
+    CmpItemKindStruct = { fg = c.cyan.fg1 },
+    CmpItemKindFolder = { fg = c.fg1 },
+    CmpItemKindFile = { fg = c.fg1 },
+
+    ---- custom highlights for nvim-dap (external plugin) ------
+    DapBreakpointText = { fg = c.red.fg2 },
+    DapBreakpointRejectedText = { fg = c.blue.fg2 },
+    DapStoppedLine = { bg = c.blue.bg1 },
+    DapStoppedText = { fg = c.blue.fg1 },
+
+    ---- :h nvim-dap-ui (external plugin) ----------------------
+    DapUIScope = { fg = c.blue.fg1 },
+    DapUIType = { fg = c.cyan.fg1 },
+    DapUIModifiedValue = { fg = c.green.fg1, style = bold },
+    DapUIDecoration = { fg = c.cyan.fg1 },
+    DapUIThread = { fg = c.purple.fg1 },
+    DapUIStoppedThread = { fg = c.purple.fg1 },
+    DapUISource = { fg = c.magenta.fg1 },
+    DapUILineNumber = { fg = c.yellow.fg1 },
+    DapUIFloatBorder = { fg = c.bg3 },
+    DapUIWatchesEmpty = { fg = c.fg3 },
+    DapUIWatchesValue = { fg = c.green.fg1 },
+    DapUIWatchesError = { fg = c.red.fg2 },
+    DapUIBreakpointsPath = { fg = c.blue.fg1 },
+    DapUIBreakpointsInfo = { fg = c.blue.fg2 },
+    DapUIBreakpointsCurrentLine = { fg = c.yellow.fg1 },
+    DapUIPlayPause = { fg = c.green.fg1 },
+    DapUIRestart = { fg = c.magenta.fg1 },
+    DapUIStop = { fg = c.red.fg1 },
+    DapUIStepOver = { fg = c.cyan.fg1 },
+    DapUIStepInto = { fg = c.cyan.fg1 },
+    DapUIStepBack = { fg = c.purple.fg1 },
+    DapUIStepOut = { fg = c.cyan.fg1 },
+    DapUIUnavailable = { fg = c.fg3 },
+
+    ---- nvim-dap-virtual-text (external plugin) ---------------
+    NvimDapVirtualText = { fg = c.fg3 },
+
+    ---- :h nvim-tree (external plugin) ------------------------
+    NvimTreeRootFolder = { fg = c.blue.fg1 },
+    NvimTreeFolderName = { fg = c.fg1 },
+    NvimTreeOpenedFolderName = { fg = c.magenta.fg1 },
+    NvimTreeExecFile = { fg = c.cyan.fg1 },
+    NvimTreeSpecialFile = { fg = c.yellow.fg1 },
+    NvimTreeGitDirty = { fg = c.red.fg1 },
+    NvimTreeGitNew = { fg = c.green.fg1 },
+    NvimTreeGitRenamed = { fg = c.green.fg1 },
+    NvimTreeGitStaged = { fg = c.green.fg1 },
+    NvimTreeWindowPicker = { fg = c.bg1, bg = c.blue.fg1 },
+
+    ---- :h telescope (external plugin) ------------------------
+    TelescopeBorder = { fg = c.fg3, bg = c.bg1 },
+    TelescopeNormal = { bg = c.bg1 },
+    TelescopePromptTitle = { fg = c.bg1, bg = c.blue.fg1 },
+    TelescopePromptBorder = { fg = c.fg3, bg = c.bg1 },
+    TelescopePromptCounter = { fg = c.fg1 },
+    TelescopePromptNormal = { fg = c.fg1 },
+    TelescopePromptPrefix = { fg = c.fg1 },
+    TelescopeResultsTitle = { fg = c.bg1, bg = c.magenta.fg1 },
+    TelescopePreviewTitle = { fg = c.bg1, bg = c.yellow.fg1 },
+    TelescopePreviewBorder = { fg = c.fg3, bg = c.bg1 },
+    TelescopePreviewNormal = { bg = c.bg1 },
+    TelescopeSelection = { bg = c.bg3 },
+    TelescopeMatching = { fg = c.green.fg1 },
+
+    ---- snacks (external plugin) ------------------------------
+    SnacksIndent = { fg = c.bg3 },
+    SnacksIndentScope = { fg = c.yellow.fg2 },
+
+    ---- :h sneak (external plugin) ----------------------------
+    Sneak = { bg = c.yellow.bg1 },
+    SneakScope = { bg = c.bg3 },
+
+    ---- vim-illuminate (external plugin) ----------------------
+    IlluminatedWordText = { bg = c.bg3 },
+    IlluminatedWordRead = { bg = c.bg3 },
+    IlluminatedWordWrite = { bg = c.bg3 },
+}

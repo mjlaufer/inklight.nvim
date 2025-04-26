@@ -1,0 +1,9 @@
+[delta]
+    syntax-theme = inklight
+    line-numbers-minus-style = "#c50000"
+    line-numbers-plus-style = "#008000"
+    line-numbers-zero-style = "#6d6d6d"
+    minus-style = "syntax #fcdbd8"
+    minus-emph-style = "syntax #fcc8c4"
+    plus-style = "syntax #d5ecce"
+    plus-emph-style = "syntax #bbe5b2"
