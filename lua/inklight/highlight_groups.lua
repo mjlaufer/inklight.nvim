@@ -69,19 +69,19 @@ return {
     Number = { fg = c.yellow.fg1 },
     Float = { fg = c.yellow.fg1 },
     Boolean = { fg = c.yellow.fg1 },
-    Operator = { fg = c.magenta.fg1 },
+    Operator = { fg = c.cyan.fg1 },
     Statement = { fg = c.purple.fg1 }, -- (preferred) any statement
     Conditional = { fg = c.purple.fg1 }, -- if, then, else, etc.
     Repeat = { fg = c.purple.fg1 }, -- for, do, while, etc.
     Exception = { fg = c.purple.fg1 }, -- try, catch, throw
     Label = { fg = c.fg1 },
     -- Keyword = {}, -- any other keyword
-    PreProc = { fg = c.magenta.fg1 }, -- (preferred) generic Preprocessor
+    PreProc = { fg = c.cyan.fg1 }, -- (preferred) generic Preprocessor
     -- Include = {},
     -- Define = {},
     -- Macro = {},
     -- PreCondit = {},
-    Type = { fg = c.cyan.fg1 },
+    Type = { fg = c.magenta.fg1 },
     -- StorageClass = {},
     -- Structure = {},
     -- Typedef = {},
@@ -108,7 +108,7 @@ return {
     ['@lsp.typemod.variable.defaultlibrary.typescriptreact'] = { fg = c.fg2 },
 
     ---- :h nvim-treesitter (external plugin) ------------------
-    ['@attribute'] = { fg = c.magenta.fg1 },
+    ['@attribute'] = { fg = c.cyan.fg1 },
     ['@comment'] = { fg = c.red.fg1 },
     ['@constant.javascript'] = { fg = c.fg1, style = italic },
     ['@constant.typescript'] = { fg = c.fg1, style = italic },
@@ -120,7 +120,7 @@ return {
     ['@function'] = { fg = c.blue.fg1 },
     ['@function.macro'] = { fg = c.blue.fg1 },
     ['@function.builtin.go'] = { fg = c.blue.fg1 },
-    ['@keyword.operator'] = { fg = c.magenta.fg1 },
+    ['@keyword.operator'] = { fg = c.cyan.fg1 },
     ['@label'] = { fg = c.fg1 },
     ['@module.elm'] = { fg = c.fg1 },
     ['@namespace'] = { fg = c.fg1 },
@@ -130,7 +130,7 @@ return {
     ['@punctuation.special'] = { fg = c.fg2 },
     ['@string.regexp'] = { fg = c.yellow.fg1 },
     ['@string.escape'] = { fg = c.yellow.fg1 },
-    ['@type.builtin'] = { fg = c.cyan.fg1 },
+    ['@type.builtin'] = { fg = c.magenta.fg1 },
     ['@type.qualifier'] = { fg = c.purple.fg1 },
     ['@variable'] = { fg = c.fg1 },
     ['@variable.builtin'] = { fg = c.fg2 },
@@ -255,13 +255,13 @@ return {
     CmpItemKindVariable = { fg = c.fg1 },
     CmpItemKindValue = { fg = c.fg2 },
     CmpItemKindConstant = { fg = c.yellow.fg1 },
-    CmpItemKindOperator = { fg = c.magenta.fg1 },
+    CmpItemKindOperator = { fg = c.cyan.fg1 },
     CmpItemKindFunction = { fg = c.blue.fg1 },
     CmpItemKindMethod = { fg = c.blue.fg1 },
     CmpItemKindReference = { fg = c.fg2 },
-    CmpItemKindClass = { fg = c.cyan.fg1 },
-    CmpItemKindInterface = { fg = c.cyan.fg1 },
-    CmpItemKindStruct = { fg = c.cyan.fg1 },
+    CmpItemKindClass = { fg = c.magenta.fg1 },
+    CmpItemKindInterface = { fg = c.magenta.fg1 },
+    CmpItemKindStruct = { fg = c.magenta.fg1 },
     CmpItemKindFolder = { fg = c.fg1 },
     CmpItemKindFile = { fg = c.fg1 },
 
