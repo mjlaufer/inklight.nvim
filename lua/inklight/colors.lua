@@ -7,10 +7,10 @@ return {
     fg3 = '#6d6d6d', -- OKHSL(0, 0, 46)
 
     red = {
-        fg1 = '#c50000', -- OKHSL(29, 100, 44)
-        fg2 = '#cb3939', -- OKHSL(25, 86, 49)
-        bg1 = '#fcdbd8', --OKHSL(23, 83, 90)
-        bg2 = '#fcc8c4', --OKHSL(23, 86, 86)
+        fg1 = '#b30000', -- OKHSL(29, 100, 40)
+        fg2 = '#b52c37', -- OKHSL(22, 86, 44)
+        bg1 = '#fcd7da', --OKHSL(12, 80, 90)
+        bg2 = '#fcc7cc', --OKHSL(12, 83, 86)
     },
     yellow = {
         fg1 = '#ca5c00', -- OKHSL(49, 100, 54)
@@ -38,6 +38,7 @@ return {
         fg1 = '#8b00ac', -- OKHSL(317, 100, 39)
     },
     magenta = {
-        fg1 = '#cd0088', -- OKHSL(350, 100, 49)
+        fg1 = '#bf007d', -- OKHSL(350, 100, 46)
+        fg2 = '#c7337f', -- OKHSL(354, 79, 50)
     },
 }
