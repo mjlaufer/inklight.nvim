@@ -8,37 +8,37 @@ return {
 
     red = {
         fg1 = '#b30000', -- OKHSL(29, 100, 40)
-        fg2 = '#b52c37', -- OKHSL(22, 86, 44)
-        bg1 = '#fcd7da', --OKHSL(12, 80, 90)
-        bg2 = '#fcc7cc', --OKHSL(12, 83, 86)
+        fg2 = '#ce0000', -- OKHSL(29, 100, 46)
+        bg1 = '#ffd8d7', --OKHSL(19, 100, 90)
+        bg2 = '#ffc7c7', --OKHSL(19, 100, 86) - Used by .gitconfig
     },
     yellow = {
-        fg1 = '#ca5c00', -- OKHSL(49, 100, 54)
-        fg2 = '#c56d2d', -- OKHSL(53, 78, 56)
-        bg1 = '#fecf9b', -- OKHSL(70, 90, 86)
+        fg1 = '#c75a00', -- OKHSL(49, 100, 53)
+        fg2 = '#d76200', -- OKHSL(49, 100, 57)
+        bg1 = '#ffdcb6', -- OKHSL(69, 100, 90)
+        bg2 = '#ffcd96', -- OKHSL(69, 100, 86)
     },
     green = {
-        fg1 = '#008000', -- OKHSL(142, 100, 44)
-        fg2 = '#44844f', -- OKHSL(148, 70, 49)
-        bg1 = '#d5ecce', -- OKHSL(139, 48, 90)
-        bg2 = '#bbe5b2', -- OKHSL(140, 55, 86)
+        fg1 = '#437800', -- OKHSL(133, 100, 44)
+        fg2 = '#4d8700', -- OKHSL(133, 100, 49)
+        bg1 = '#d4ebc6', -- OKHSL(133, 51, 90)
+        bg2 = '#c0e5a6', -- OKHSL(133, 59, 86) - Used by .gitconfig
     },
     cyan = {
-        fg1 = '#007999', -- OKHSL(225, 100, 46)
-        fg2 = '#30839e', -- OKHSL(223, 71, 50)
-        bg1 = '#c7ecf5', -- OKHSL(215, 59, 91)
-        bg2 = '#afe2f0', -- OKHSL(216, 58, 86)
+        fg1 = '#007787', -- OKHSL(211, 100, 45)
+        fg2 = '#008698', -- OKHSL(211, 100, 50)
+        bg1 = '#c4ebf2', -- OKHSL(211, 55, 90)
     },
     blue = {
         fg1 = '#005fae', -- OKHSL(252, 100, 40)
-        fg2 = '#4471bd', -- OKHSL(260, 65, 48)
-        bg1 = '#cfe5ff', -- OKHSL(253, 100, 90)
+        fg2 = '#0070ca', -- OKHSL(252, 100, 47)
+        bg1 = '#cfe5ff', -- OKHSL(252, 100, 90)
     },
     purple = {
         fg1 = '#8b00ac', -- OKHSL(317, 100, 39)
     },
     magenta = {
         fg1 = '#bf007d', -- OKHSL(350, 100, 46)
-        fg2 = '#c7337f', -- OKHSL(354, 79, 50)
+        fg2 = '#d6008d', -- OKHSL(350, 100, 51)
     },
 }

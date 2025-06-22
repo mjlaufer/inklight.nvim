@@ -161,9 +161,9 @@ return {
 
     ---- :h diff ----------------------------------------------
     DiffAdd = { bg = c.green.bg1 },
-    DiffChange = { bg = c.cyan.bg1 },
+    DiffChange = { bg = c.yellow.bg1 },
     DiffDelete = { bg = c.red.bg1 },
-    DiffText = { bg = c.cyan.bg2 },
+    DiffText = { bg = c.yellow.bg2 },
 
     ---- :h diagnostic-highlight -------------------------------
     DiagnosticError = { fg = c.red.fg2 },
@@ -225,7 +225,7 @@ return {
 
     ---- :h gitsigns (external plugin) -------------------------
     GitSignsAdd = { fg = c.green.fg2 },
-    GitSignsChange = { fg = c.cyan.fg2 },
+    GitSignsChange = { fg = c.green.fg2 },
     GitSignsDelete = { fg = c.red.fg2 },
     GitSignsCurrentLineBlame = { fg = c.fg3 },
 
