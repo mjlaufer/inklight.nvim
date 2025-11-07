@@ -41,6 +41,7 @@ return {
     MatchParen = { fg = c.fg1, bg = c.bg3, style = bold },
     Substitute = { bg = c.yellow.bg1 },
     Search = { bg = c.yellow.bg1 },
+    CurSearch = { bg = c.yellow.bg2 },
     IncSearch = { bg = c.cyan.bg1 },
     Visual = { bg = c.cyan.bg1 },
     -- VisualNOS = {},
@@ -334,7 +335,9 @@ return {
 
     ---- :h sneak (external plugin) ----------------------------
     Sneak = { bg = c.yellow.bg1 },
-    SneakScope = { bg = c.bg3 },
+    SneakCurrent = { bg = c.yellow.bg2 },
+    SneakScope = { bg = c.cyan.bg1 },
+    SneakLabel = { fg = c.fg1, bg = c.yellow.bg1, style = bold },
 
     ---- vim-illuminate (external plugin) ----------------------
     IlluminatedWordText = { bg = c.bg3 },
