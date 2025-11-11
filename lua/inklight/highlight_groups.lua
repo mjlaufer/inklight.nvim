@@ -225,13 +225,48 @@ return {
     -- LspDiagnosticsSignHint = {},
     -- LspDiagnosticsSignInformation = {},
 
-    ---- :h gitsigns (external plugin) -------------------------
+    ---- EXTERNAL PLUGINS --------------------------------------
+
+    -- fzf-lua
+    FzfLuaNormal = { fg = c.fg1, bg = c.bg1 },
+    FzfLuaBorder = { fg = c.bg3, bg = c.bg1 },
+    FzfLuaTitle = { fg = c.bg1, bg = c.cyan.fg1 },
+    FzfLuaTitleFlags = { fg = c.magenta.soft.fg1, bg = c.bg1 },
+    FzfLuaBackdrop = { bg = c.fg3 },
+    FzfLuaPreviewTitle = { fg = c.bg1, bg = c.magenta.fg1 },
+    FzfLuaHeaderBind = { fg = c.magenta.soft.fg1, bg = c.bg2 },
+    FzfLuaHeaderText = { fg = c.fg2 },
+    FzfLuaPathColNr = { fg = c.cyan.fg1 },
+    FzfLuaPathLineNr = { fg = c.green.fg1 },
+    FzfLuaBufName = { fg = c.fg1 },
+    FzfLuaBufId = { fg = c.magenta.soft.fg1 },
+    FzfLuaBufNr = { fg = c.magenta.soft.fg1 },
+    FzfLuaBufFlagCur = { fg = c.fg1 },
+    FzfLuaBufFlagAlt = { fg = c.fg2 },
+    FzfLuaTabTitle = { fg = c.bg1, bg = c.yellow.fg1 },
+    FzfLuaTabMarker = { fg = c.magenta.soft.fg1 },
+    FzfLuaDirPart = { fg = c.fg2 },
+    FzfLuaFilePart = { fg = c.fg2 },
+    FzfLuaLivePrompt = { fg = c.fg1 },
+    FzfLuaLiveSym = { fg = c.green.fg1 },
+    FzfLuaCmdEx = { fg = c.blue.fg1 },
+    FzfLuaCmdBuf = { fg = c.blue.fg1 },
+    FzfLuaCmdGlobal = { fg = c.blue.fg1 },
+    FzfLuaFzfMatch = { fg = c.green.fg1 },
+    FzfLuaFzfScrollbar = { fg = c.magenta.fg2 },
+    FzfLuaFzfGutter = { bg = c.bg2 },
+    FzfLuaFzfInfo = { fg = c.fg2 },
+    FzfLuaFzfPointer = { fg = c.magenta.soft.fg2 },
+    FzfLuaFzfPrompt = { fg = c.fg1 },
+    FzfLuaFzfQuery = { fg = c.fg1 },
+
+    -- :h gitsigns
     GitSignsAdd = { fg = c.green.fg2 },
     GitSignsChange = { fg = c.green.fg2 },
     GitSignsDelete = { fg = c.red.fg2 },
     GitSignsCurrentLineBlame = { fg = c.fg3 },
 
-    ---- neotest (external plugin) -----------------------------
+    -- neotest
     NeotestAdapterName = { fg = c.fg1 },
     NeotestDir = { fg = c.fg1 },
     NeotestRunning = { fg = c.green.fg2 },
@@ -249,7 +284,7 @@ return {
     NeotestUnknown = { fg = c.fg2 },
     NeotestExpandMarker = { fg = c.fg3 },
 
-    ---- nvim-cmp (external plugin) ----------------------------
+    -- nvim-cmp
     CmpItemAbbrMatch = { fg = c.green.fg1 },
     CmpItemAbbrMatchFuzzy = { fg = c.green.fg2 },
     CmpItemKindMenu = { fg = c.green.fg1 },
@@ -268,13 +303,13 @@ return {
     CmpItemKindFolder = { fg = c.fg1 },
     CmpItemKindFile = { fg = c.fg1 },
 
-    ---- custom highlights for nvim-dap (external plugin) ------
+    -- nvim-dap
     DapBreakpointText = { fg = c.red.fg2 },
     DapBreakpointRejectedText = { fg = c.blue.fg2 },
     DapStoppedLine = { bg = c.blue.bg1 },
     DapStoppedText = { fg = c.blue.fg1 },
 
-    ---- :h nvim-dap-ui (external plugin) ----------------------
+    -- :h nvim-dap-ui
     DapUIScope = { fg = c.cyan.fg1 },
     DapUIType = { fg = c.indigo.fg1 },
     DapUIModifiedValue = { fg = c.green.fg1, style = bold },
@@ -299,10 +334,10 @@ return {
     DapUIStepOut = { fg = c.fg1 },
     DapUIUnavailable = { fg = c.fg3 },
 
-    ---- nvim-dap-virtual-text (external plugin) ---------------
+    -- nvim-dap-virtual-text
     NvimDapVirtualText = { fg = c.fg3 },
 
-    ---- :h nvim-tree (external plugin) ------------------------
+    -- :h nvim-tree
     NvimTreeRootFolder = { fg = c.cyan.fg1 },
     NvimTreeFolderName = { fg = c.fg1 },
     NvimTreeOpenedFolderName = { fg = c.fg1 },
@@ -314,7 +349,7 @@ return {
     NvimTreeGitStaged = { fg = c.green.fg1 },
     NvimTreeWindowPicker = { fg = c.bg1, bg = c.cyan.fg1 },
 
-    ---- :h telescope (external plugin) ------------------------
+    -- :h telescope
     TelescopeBorder = { fg = c.fg3, bg = c.bg1 },
     TelescopeNormal = { bg = c.bg1 },
     TelescopePromptTitle = { fg = c.bg1, bg = c.cyan.fg1 },
@@ -329,17 +364,17 @@ return {
     TelescopeSelection = { bg = c.bg3 },
     TelescopeMatching = { fg = c.green.fg1 },
 
-    ---- snacks (external plugin) ------------------------------
+    -- snacks
     SnacksIndent = { fg = c.bg3 },
     SnacksIndentScope = { fg = c.magenta.soft.fg2 },
 
-    ---- :h sneak (external plugin) ----------------------------
+    -- :h sneak
     Sneak = { bg = c.yellow.bg1 },
     SneakCurrent = { bg = c.yellow.bg2 },
     SneakScope = { bg = c.cyan.bg1 },
     SneakLabel = { fg = c.fg1, bg = c.yellow.bg1, style = bold },
 
-    ---- vim-illuminate (external plugin) ----------------------
+    -- vim-illuminate
     IlluminatedWordText = { bg = c.bg3 },
     IlluminatedWordRead = { bg = c.bg3 },
     IlluminatedWordWrite = { bg = c.bg3 },
