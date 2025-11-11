@@ -1,11 +1,10 @@
 # Inklight
 
-Inklight is a light medium-contrast theme for Neovim (v0.9 and higher).
-
-This project includes themes for [lualine](https://github.com/nvim-lualine/lualine.nvim) and [Kitty](https://sw.kovidgoyal.net/kitty/).
+Inklight is a light medium-contrast theme for Neovim (v0.11 and higher).
 
 Supported plugins:
 
+-   [fzf-lua](https://github.com/ibhagwan/fzf-lua)
 -   [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
 -   [lualine](https://github.com/nvim-lualine/lualine.nvim)
 -   [neotest](https://github.com/nvim-neotest/neotest)
