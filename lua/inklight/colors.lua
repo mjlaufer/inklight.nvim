@@ -30,9 +30,9 @@ return {
         bg1 = '#d3eef4', -- OKHSL(211, 50, 92)
     },
     blue = {
-        fg1 = '#005db1', -- OKHSL(254, 100, 40)
-        fg2 = '#006ed0', -- OKHSL(254, 100, 47)
-        bg1 = '#d9eaff', -- OKHSL(254, 100, 92)
+        fg1 = '#0063b7', -- OKHSL(253, 100, 42)
+        fg2 = '#006fcc', -- OKHSL(253, 100, 47)
+        bg1 = '#d9eaff', -- OKHSL(253, 100, 92)
     },
     indigo = {
         fg1 = '#5353c5', -- OKHSL(278, 75, 43)
