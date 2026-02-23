@@ -24,7 +24,7 @@ return {
     WinBarNC = { bg = c.bg1, fg = c.fg2 },
     WinSeparator = { fg = c.bg3 },
     LineNr = { bg = c.bg2, fg = c.fg3 },
-    CursorLineNr = { bg = c.bg2, fg = c.magenta.fg2, style = bold },
+    CursorLineNr = { bg = c.bg2, fg = c.magenta.soft.fg1, style = bold },
     Folded = { fg = c.magenta.soft.fg2, bg = c.bg2 },
     FoldColumn = { bg = c.bg2, fg = c.bg3 },
     SignColumn = { bg = c.bg2, fg = c.bg3 },
