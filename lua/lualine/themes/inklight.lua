@@ -1,34 +1,34 @@
-local c = require('inklight.colors')
+local p = require('inklight.palette')
 
 return {
     normal = {
-        a = { bg = c.cyan.fg1, fg = c.bg1, gui = 'bold' },
-        b = { bg = c.bg3, fg = c.cyan.fg1 },
-        c = { bg = c.bg2, fg = c.fg2 },
+        a = { bg = p.cyan.fg1, fg = p.bg1, gui = 'bold' },
+        b = { bg = p.bg3, fg = p.cyan.fg1 },
+        c = { bg = p.bg2, fg = p.fg2 },
     },
     insert = {
-        a = { bg = c.magenta.fg1, fg = c.bg1, gui = 'bold' },
-        b = { bg = c.bg3, fg = c.magenta.fg1 },
+        a = { bg = p.blue.fg1, fg = p.bg1, gui = 'bold' },
+        b = { bg = p.bg3, fg = p.blue.fg1 },
     },
     visual = {
-        a = { bg = c.indigo.fg1, fg = c.bg1, gui = 'bold' },
-        b = { bg = c.bg3, fg = c.indigo.fg1 },
+        a = { bg = p.purple.fg1, fg = p.bg1, gui = 'bold' },
+        b = { bg = p.bg3, fg = p.purple.fg1 },
     },
     command = {
-        a = { bg = c.blue.fg1, fg = c.bg1, gui = 'bold' },
-        b = { bg = c.bg3, fg = c.blue.fg1 },
+        a = { bg = p.magenta.fg1, fg = p.bg1, gui = 'bold' },
+        b = { bg = p.bg3, fg = p.magenta.fg1 },
     },
     replace = {
-        a = { bg = c.yellow.fg1, fg = c.bg1, gui = 'bold' },
-        b = { bg = c.bg3, fg = c.yellow.fg1 },
+        a = { bg = p.yellow.fg1, fg = p.bg1, gui = 'bold' },
+        b = { bg = p.bg3, fg = p.yellow.fg1 },
     },
     terminal = {
-        a = { bg = c.green.fg1, fg = c.bg1, gui = 'bold' },
-        b = { bg = c.bg3, fg = c.green.fg1 },
+        a = { bg = p.green.fg1, fg = p.bg1, gui = 'bold' },
+        b = { bg = p.bg3, fg = p.green.fg1 },
     },
     inactive = {
-        a = { bg = c.bg2, fg = c.fg3 },
-        b = { bg = c.bg3, fg = c.fg3 },
-        c = { bg = c.bg2, fg = c.fg2 },
+        a = { bg = p.bg2, fg = p.fg3 },
+        b = { bg = p.bg3, fg = p.fg3 },
+        c = { bg = p.bg2, fg = p.fg2 },
     },
 }
