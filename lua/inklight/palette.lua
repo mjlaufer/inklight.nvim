@@ -25,18 +25,18 @@ return {
         bg2 = '#c8e4ba', -- OKHSL(135, 48, 87) - Used by .gitconfig
     },
     cyan = {
-        fg1 = '#007787', -- OKHSL(211, 100, 45)
+        fg1 = '#007585', -- OKHSL(211, 100, 44)
         fg2 = '#008698', -- OKHSL(211, 100, 50)
         bg1 = '#d3eef4', -- OKHSL(211, 50, 92)
     },
     blue = {
-        fg1 = '#004dbb', -- OKHSL(260, 100, 37)
-        fg2 = '#476fb1', -- OKHSL(260, 58, 47)
+        fg1 = '#0049b1', -- OKHSL(260, 100, 35)
+        fg2 = '#436aaa', -- OKHSL(260, 58, 45)
         bg1 = '#dce9ff', -- OKHSL(260, 100, 92)
     },
     purple = {
-        fg1 = '#7e22c9', -- OKHSL(303, 91, 41)
-        fg2 = '#9254d4', -- OKHSL(303, 75, 51)
+        fg1 = '#721bb7', -- OKHSL(303, 91, 37)
+        fg2 = '#8353b9', -- OKHSL(303, 65, 47)
     },
     magenta = {
         fg1 = '#9b1b60', -- OKHSL(354, 82, 38)
