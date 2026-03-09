@@ -121,7 +121,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#721bb7</string>
+				<string>#555555</string>
 				<key>fontStyle</key>
 				<string>normal</string>
 			</dict>
