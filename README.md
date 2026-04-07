@@ -29,3 +29,14 @@ Inside `init.vim`
 set background = light
 colorscheme inklight
 ```
+
+## Local Development (with Pack)
+
+Clone/symlink inklight.nvim into a manual pack directory. For example:
+
+```sh
+$ mkdir -p ~/.local/share/nvim/site/pack/dev/start
+$ ln -s ~/path/to/inklight.nvim ~/.local/share/nvim/site/pack/dev/start/inklight.nvim
+```
+
+Plugins in pack/*/start/ load automatically. Your local version takes precedence since it's on the `runtimepath`. Comment out the `vim.pack.add` entry for inklight.nvim while testing.
